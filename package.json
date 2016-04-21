@@ -19,6 +19,7 @@
     "babel-preset-react": "6.3.13",
     "babel-preset-stage-0": "6.3.13",
     "bootstrap": "^3.3.6",
+    "flux": "^2.1.1",
     "react": "0.14.8",
     "react-dom": "^0.14.6",
     "react-history": "^1.0.0",
