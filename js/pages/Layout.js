@@ -1,7 +1,8 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import Workspace from './Workspace';
+import Header from './../components/Header';
+import Footer from './../components/Footer';
+import Workspace from './../components/Workspace';
+import { Link } from 'react-router';
 
 
 export default class Layout extends React.Component {
@@ -19,6 +20,11 @@ export default class Layout extends React.Component {
     render() {
         return (
             <div>
+                <Link to="/">Home</Link>
+                <Link to="archive">Archive</Link>
+                <hr/>
+                {this.props.children}
+                <hr/>
                 <Header title={this.state.title}/>
                 <Workspace title={this.state.title} changeTitle={this.changeTitle.bind(this)} />
                 <Footer/>
